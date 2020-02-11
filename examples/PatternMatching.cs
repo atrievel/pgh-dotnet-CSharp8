@@ -3,7 +3,15 @@ using System;
 namespace DotNetLightningTalks
 {  
     public class PatternMatching
-    {    
+    {   
+        public enum Console
+        {
+            Xbox,
+            Playstation,
+            Switch,
+            Genesis
+        }
+
         public string OldSwitchMethod(Console consoleName) 
         {
             switch (consoleName)
@@ -31,6 +39,11 @@ namespace DotNetLightningTalks
                 _  => new ArgumentException(message: "Invalid console type", paramName: nameof(consoleName))
             };
 
+        private class ExampleClass 
+        {
+            public int IntProperty { get; set; }
+        }
+
         public string PropertyPattern(ExampleClass example) => 
             somePattern switch
             {
@@ -39,18 +52,5 @@ namespace DotNetLightningTalks
                 { example.IntProperty > 0 } => "Postitve integer",
                 _ => "Math is broken"
             };
-    }
-
-    public enum Console
-    {
-        Xbox,
-        Playstation,
-        Switch,
-        Genesis
-    }
-
-    private class ExampleClass 
-    {
-        public int IntProperty { get; set; }
     }
 }

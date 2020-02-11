@@ -5,11 +5,11 @@ namespace DotNetLightningTalks
     class Message
     {
         public string Contents { get; set; }
-        public DateTime CreatedOn { get; set; }
+        public DateTime CreatedOn { get; }
 
         public Message(string messageContents)
         {
-            this.Contents = messageContents ?? throw new ArgumentNullException(nameof(messageContents));
+            this.Contents = messageContents;
             this.DateTime = DateTime.Now;
         }
     }

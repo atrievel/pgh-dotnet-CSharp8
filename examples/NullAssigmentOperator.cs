@@ -10,11 +10,15 @@ namespace DotNetLightningTalks
             {
                 someInt = 100;
             }
+
+            // do some work
         }
 
         public void NewAssigment(int? someInt) 
         {
             someInt ??= 100;
         }
+
+        // do some work
     }
 }
