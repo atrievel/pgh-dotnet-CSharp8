@@ -1,7 +1,7 @@
 # pgh-dotnet-CSharp8
 Lightning talk for Pittsburgh's .NET User Group focusing on the new features of C# 8
 
-## About me - Alec Trievel
+## About me
 
 I am a software developer at CEI focusing on .NET Core, Azure, Angular, and Salesforce development. C# is a part of "daily toolbelt," so it was important to me to learn some of the new features presented in the latest release.
 
